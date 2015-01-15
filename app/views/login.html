@@ -1,0 +1,22 @@
+<div class="login-wrap" ng-controller="LoginController">
+  <div class="title">She used Pinterest to roll her first pasta</div>
+  <div class="subtitle">Join Pinterest to find (and save!) all the things that inspire you.
+</div>
+  <div class="form-container">
+    <form name="loginForm" novalidate ng-submit="login(user)">
+      <div class="form-group">
+        <input type="text" class="form-control" ng-model="user.name"
+        required
+        ng-maxlength="15"
+        ng-minlength="6"
+        placeholder="give us a name(required)">
+      </div>
+      <div class="form-group avatar-select">
+        <img src="images/male.png" class="img-responsive img-rounded" ng-click="setMale()">
+        <img src="images/female.jpeg" class="img-responsive img-rounded" ng-click="setFemale()">
+      </div>
+      <p class="avatar-tip">Select a avatar</p>
+      <button class="btn btn-block btn-success" ng-disabled="loginForm.$invalid" type="submit">Join Chat</button>
+    </form>
+  </div>
+</div>

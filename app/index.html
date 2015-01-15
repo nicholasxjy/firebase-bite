@@ -9,6 +9,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/animate-css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -21,7 +22,7 @@
     <![endif]-->
     <div class="overlay"></div>
     <!-- Add your site or application content here -->
-    <div class="wrap">
+<!--     <div class="wrap">
       <h2 class="title">Let's talk a little bit</h2>
       <div class="message-list">
         <div class="media">
@@ -58,8 +59,9 @@
           <button class="btn btn-info btn-block" type="submit" ng-disabled="msgForm.$invalid">Send it</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
+    <div ng-include="'views/login.html'"></div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
@@ -91,7 +93,8 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-
+        <script src="scripts/config.js"></script>
+        <script src="scripts/controllers/controllers.js"></script>
         <!-- endbuild -->
 </body>
 </html>
